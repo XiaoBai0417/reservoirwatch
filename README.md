@@ -1,1 +1,13 @@
 # reservoirwatch
+## Overview
+This repository contains the example code accompanying the research paper titled "Title of Your Research Paper." The code demonstrates the methodologies discussed in the paper, specifically focusing on [briefly mention the main focus, e.g., "applying machine learning algorithms to geospatial data for predicting water body distributions"].
+
+## Description
+The provided scripts perform a series of analyses detailed in the research, including data preprocessing, and result visualization. These scripts are intended to provide a transparent, reproducible snapshot of the research conducted.
+
+The scripts provided here offer a range of functionalities:
+- `MDNWI.js` and `SDWI.js`: JavaScript implementations for mapping water bodies using the Modified Normalized Difference Water Index (MDNWI) and Synthetic Aperture Radar Double-bounce Water Index (SDWI), respectively.
+- `get_pois.py`: A utility for retrieving Point of Interest (POI) data from mapping APIs, encapsulating functionality from both `poi_data_retrieval` and `coordinates_converter`.
+- `contour_detection.py`: Determines the boundaries of reservoirs based on collected point data, essential for detailed hydrological analysis.
+
+
