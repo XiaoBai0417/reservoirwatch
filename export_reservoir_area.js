@@ -3,7 +3,7 @@
 // This batch processing approach ensures that each segment of the dataset receives focused computational resources, leading to faster and more reliable outputs.
 // Initialize the FeatureCollection for global reservoirs from a user-specific asset and set the analysis parameters.
 
-var reservoirs = ee.FeatureCollection('users/hexinyue33/sample_reservoir');
+var reservoirs = ee.FeatureCollection('projects/ee-hexinyue33/assets/sample_reservoir');
 var interval = 30; // Set the time interval.
 var increment = 'day'; // Specify the units for the time interval as days.
 var start = '2024-03-18'; // Define the start date for the image collection.
