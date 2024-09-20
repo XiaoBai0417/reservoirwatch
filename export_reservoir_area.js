@@ -3,7 +3,7 @@
 // This batch processing approach ensures that each segment of the dataset receives focused computational resources, leading to faster and more reliable outputs.
 // Initialize the FeatureCollection for global reservoirs from a user-specific asset and set the analysis parameters.
 
-var reservoirs = ee.FeatureCollection('users/hexinyue33/global_reservoir');
+var reservoirs = ee.FeatureCollection('users/hexinyue33/sample_reservoir');
 var interval = 30; // Set the time interval.
 var increment = 'day'; // Specify the units for the time interval as days.
 var start = '2024-03-18'; // Define the start date for the image collection.
@@ -103,7 +103,7 @@ function updata_reservoirs(feat_col, start_, parts, buffer_res, smooth_res, redu
         var dates = roi_result.aggregate_array('date')
 
         var fff = ee.Feature(null);
-        fff = fff.set('IDD', feat.get("IDD"))
+        fff = fff.set('ID', feat.get("ID"))
         fff = fff.set('water_area', areas)
         fff = fff.set('stad_area', areas2)
         fff = fff.set('date', dates)
@@ -122,5 +122,5 @@ function updata_reservoirs(feat_col, start_, parts, buffer_res, smooth_res, redu
 }
 
 // Filter reservoirs based on their ID and apply the processing function.
-var roi = reservoirs.filterMetadata("IDD","greater_than",0).filterMetadata("extent","less_than",10000)
-updata_reservoirs(roi, 0, 1000, 10, 10, 10, "IDD_10000")
+var roi = reservoirs.filterMetadata("ID","greater_than",0).filterMetadata("extent","less_than",1000)
+updata_reservoirs(roi, 0, 100, 10, 10, 10, "ID_10000")
