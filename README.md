@@ -8,6 +8,6 @@ The scripts provided here offer a range of functionalities:
 - `MDNWI.js` and `SDWI.js`: JavaScript implementations for mapping water bodies using the Modified Normalized Difference Water Index (MDNWI) and Synthetic Aperture Radar Sentinel-1 Dual-Polarized Water Index (SDWI), respectively.
 - `get_pois.py`: A utility for retrieving Point of Interest (POI) data from mapping APIs, encapsulating functionality from both `poi_data_retrieval` and `coordinates_converter`.
 - `contour_detection.py`: Determines the boundaries of reservoirs based on collected point data, essential for detailed hydrological analysis.
-- 'export_reservoir_area.js'：To optimize computational efficiency and manage large datasets effectively, this script employs batch processing to divide the dataset into smaller segments for parallel processing.
+-  export_reservoir_area.js：To optimize computational efficiency and manage large datasets effectively, this script employs batch processing to divide the dataset into smaller segments for parallel processing.
 
 
