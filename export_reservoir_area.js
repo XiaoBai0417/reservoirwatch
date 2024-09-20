@@ -122,5 +122,5 @@ function updata_reservoirs(feat_col, start_, parts, buffer_res, smooth_res, redu
 }
 
 // Filter reservoirs based on their ID and apply the processing function.
-var roi = reservoirs.filterMetadata("ID","greater_than",0).filterMetadata("extent","less_than",1000)
+var roi = reservoirs.filterMetadata("ID","greater_than",0).filterMetadata("ID","less_than",1000)
 updata_reservoirs(roi, 0, 10, 10, 10, 10, "ID_1000")
